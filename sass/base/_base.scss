@@ -8,7 +8,27 @@
 
 html {
   // This defines what 1rem is
-  font-size: 63%; // 10px wanted, 16px default size so 62.5%
+  font-size: 62.5%; // 10px wanted, 16px default size so 62.5%
+
+  // @include respond(phone) {
+
+  // }
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 9px wanted, 16px default size so 56.25%
+  }
+  
+  @include respond(tab-port) {
+    font-size: 50%; // 8px wanted, 16px default size so 50%
+  }
+
+  @include respond(phone) {
+    font-size: 30%; // 4.8px wanted, 16px default size so 30%
+  }
+  
+  @include respond(big-desktop) {
+    font-size: 75%; // 12px wanted, 16px default size so 75%;
+  }
 }
 
 body {
